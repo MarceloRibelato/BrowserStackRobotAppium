@@ -28,6 +28,6 @@ jobs:
       - name: Executar teste no BrowserStack
         run: |
           curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
-          -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-build" \
-          -d '{"testSuite": "bs://0ad8c4aa17fcbb397d84ff77c02dee10a938edbb", "device": ["Samsung Galaxy S7-6.0"]}' \
+          -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
+          -d '{"testSuite": "bs://7e756739686269e67a25e02bf170a2d9360344a0", "devices": ["Samsung Galaxy S24 Ultra-14.0"]}' \
           -H "Content-Type: application/json"
