@@ -29,5 +29,5 @@ jobs:
         run: |
           curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
           -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-build" \
-          -d '{"testSuite": "bs://0ad8c4aa17fcbb397d84ff77c02dee10a938edbb", "devices": ["Samsung Galaxy S23 Ultra13.0","Google Pixel 8 Pro14.0"]}' \
+          -d '{"testSuite": "bs://0ad8c4aa17fcbb397d84ff77c02dee10a938edbb", "devices": ["Samsung Galaxy S23 Ultra","Google Pixel 8 Pro"]}' \
           -H "Content-Type: application/json"
