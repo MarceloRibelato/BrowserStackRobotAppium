@@ -19,15 +19,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Upload do APK
-        run: |
-          curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
-          -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-app" \
-          -F file=@app/Calculadora.apk
+#      - name: Upload do APK
+#        run: |
+#          curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
+#          -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-app" \
+#          -F file=@app/Calculadora.apk
 
       - name: Executar teste no BrowserStack
         run: |
           curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
           -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-build" \
-          -d '{"testSuite": "bs://4cc0bad26beff95e0ca0b5f70917da8d7b782e49", "devices": ["Samsung Galaxy S9 Plus-9.0"]}' \
+          -d '{"testSuite": bs://0ad8c4aa17fcbb397d84ff77c02dee10a938edbb", "devices": ["Samsung Galaxy S9 Plus-9.0"]}' \
           -H "Content-Type: application/json"
