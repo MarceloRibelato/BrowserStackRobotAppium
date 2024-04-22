@@ -1,0 +1,39 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Somar                                                                  
+==============================================================================
+CT-002: Somar 35 com 65                                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\features\Somar.robot:18
+    T:  CT-002: Somar 35 com 65    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\features\Somar.robot:4
+      Fechar app    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\resources\Config.resource:26
+          
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\resources\Config.resource:27
+      Mark Test Status    failed    Algo deu errado!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\resources\Config.resource:33
+      TEST STATUS    ${status}    ${reason}
+      |  ${status} = failed (str)
+      |  ${reason} = Algo deu errado! (str)
+______________________________________________________________________________
+| FAIL |
+WebDriverException: Message: App Automate testing time has expired. Contact BrowserStack Support at https://www.browserstack.com/contact for extending your Free Trial.
+
+
+Also teardown failed:
+No application is open
+------------------------------------------------------------------------------
+Suites.Somar                                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\PyCharm Workspace\BrowserStack-Calculator-Android\pabot_results\11\output.xml

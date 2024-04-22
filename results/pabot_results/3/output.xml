@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230510 16:03:44.016" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Subtrair" source="C:\PyCharm Workspace\BrowserStack-Calculator\features\Subtrair.robot">
+<test id="s1-s1-t1" name="CT-001: Subtrair 15 de 75" line="7">
+<kw name="Dado que estou no app" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou no app" library="Subtrair">
+<kw name="Abrir app" library="Config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>device=${DEVICE}</arg>
+<arg>os=${OS}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>build=${BUILD}</arg>
+<arg>name=${NAME}</arg>
+<arg>project=${PROJECT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230510 16:03:44.563" endtime="20230510 16:04:06.548"/>
+</kw>
+<status status="PASS" starttime="20230510 16:03:44.563" endtime="20230510 16:04:06.548"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:06.548" endtime="20230510 16:04:07.357"/>
+</kw>
+<status status="PASS" starttime="20230510 16:03:44.563" endtime="20230510 16:04:07.357"/>
+</kw>
+<status status="PASS" starttime="20230510 16:03:44.559" endtime="20230510 16:04:07.357"/>
+</kw>
+<status status="PASS" starttime="20230510 16:03:44.559" endtime="20230510 16:04:07.357"/>
+</kw>
+<kw name="Quando digito o valor 75" library="BDDpt-br" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o valor 75" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:07.360" endtime="20230510 16:04:08.099"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<arg>75</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:04:08.103" level="INFO">Typing text '75' into text field 'id=android_field_first_number'</msg>
+<status status="PASS" starttime="20230510 16:04:08.099" endtime="20230510 16:04:09.371"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:07.360" endtime="20230510 16:04:09.371"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:07.357" endtime="20230510 16:04:09.371"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:07.357" endtime="20230510 16:04:09.371"/>
+</kw>
+<kw name="E subtraio 15" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="subtraio 15" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:09.375" endtime="20230510 16:04:10.275"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<arg>15</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:04:10.275" level="INFO">Typing text '15' into text field 'id=android_field_second_number'</msg>
+<status status="PASS" starttime="20230510 16:04:10.275" endtime="20230510 16:04:11.588"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:09.375" endtime="20230510 16:04:11.588"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:09.371" endtime="20230510 16:04:11.588"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:09.371" endtime="20230510 16:04:11.588"/>
+</kw>
+<kw name="Então o resultado deve ser 60" library="BDDpt-br" sourcename="Então ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="o resultado deve ser 60" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:11.592" endtime="20230510 16:04:12.527"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230510 16:04:12.531" level="INFO">Clicking element 'id=android_button_sub'.</msg>
+<status status="PASS" starttime="20230510 16:04:12.527" endtime="20230510 16:04:13.426"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:13.426" endtime="20230510 16:04:14.349"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<arg>60</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230510 16:04:14.349" level="INFO">Verifying element 'id=android_result_text' contains text '60'.</msg>
+<status status="PASS" starttime="20230510 16:04:14.349" endtime="20230510 16:04:15.152"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:11.592" endtime="20230510 16:04:15.152"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:11.588" endtime="20230510 16:04:15.152"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:11.588" endtime="20230510 16:04:15.152"/>
+</kw>
+<kw name="Fechar app" library="Config" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${TEST STATUS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230510 16:04:15.156" level="INFO">PASS</msg>
+<status status="PASS" starttime="20230510 16:04:15.152" endtime="20230510 16:04:15.156"/>
+</kw>
+<if>
+<branch type="IF" condition="'${TEST STATUS}' == 'PASS'">
+<kw name="Mark Test Status" library="Config">
+<arg>passed</arg>
+<arg>Resultado validado com sucesso!</arg>
+<kw name="TEST STATUS" library="mark-test-status">
+<arg>${status}</arg>
+<arg>${reason}</arg>
+<status status="PASS" starttime="20230510 16:04:15.156" endtime="20230510 16:04:16.183"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:15.156" endtime="20230510 16:04:16.183"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:15.156" endtime="20230510 16:04:16.183"/>
+</branch>
+<branch type="ELSE">
+<kw name="Mark Test Status" library="Config">
+<arg>failed</arg>
+<arg>Algo deu errado!</arg>
+<status status="NOT RUN" starttime="20230510 16:04:16.183" endtime="20230510 16:04:16.183"/>
+</kw>
+<status status="NOT RUN" starttime="20230510 16:04:16.183" endtime="20230510 16:04:16.183"/>
+</branch>
+<status status="PASS" starttime="20230510 16:04:15.156" endtime="20230510 16:04:16.183"/>
+</if>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20230510 16:04:16.183" endtime="20230510 16:04:17.089"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:15.152" endtime="20230510 16:04:17.089"/>
+</kw>
+<status status="PASS" starttime="20230510 16:03:44.555" endtime="20230510 16:04:17.089"/>
+</test>
+<test id="s1-s1-t2" name="CT-002: Subtrair 7 de 21" line="13">
+<kw name="Dado que estou no app" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou no app" library="Subtrair">
+<kw name="Abrir app" library="Config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>device=${DEVICE}</arg>
+<arg>os=${OS}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>build=${BUILD}</arg>
+<arg>name=${NAME}</arg>
+<arg>project=${PROJECT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230510 16:04:17.103" endtime="20230510 16:04:53.224"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:17.100" endtime="20230510 16:04:53.224"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:53.227" endtime="20230510 16:04:53.923"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:17.100" endtime="20230510 16:04:53.923"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:17.096" endtime="20230510 16:04:53.923"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:17.096" endtime="20230510 16:04:53.923"/>
+</kw>
+<kw name="Quando digito o valor 21" library="BDDpt-br" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o valor 21" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:53.931" endtime="20230510 16:04:54.582"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<arg>21</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:04:54.586" level="INFO">Typing text '21' into text field 'id=android_field_first_number'</msg>
+<status status="PASS" starttime="20230510 16:04:54.582" endtime="20230510 16:04:55.762"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:53.931" endtime="20230510 16:04:55.762"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:53.923" endtime="20230510 16:04:55.765"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:53.923" endtime="20230510 16:04:55.765"/>
+</kw>
+<kw name="E subtraio 7" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="subtraio 7" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:55.765" endtime="20230510 16:04:56.519"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<arg>7</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:04:56.519" level="INFO">Typing text '7' into text field 'id=android_field_second_number'</msg>
+<status status="PASS" starttime="20230510 16:04:56.519" endtime="20230510 16:04:57.534"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:55.765" endtime="20230510 16:04:57.534"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:55.765" endtime="20230510 16:04:57.534"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:55.765" endtime="20230510 16:04:57.534"/>
+</kw>
+<kw name="Então o resultado deve ser 14" library="BDDpt-br" sourcename="Então ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="o resultado deve ser 14" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:57.543" endtime="20230510 16:04:58.574"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230510 16:04:58.574" level="INFO">Clicking element 'id=android_button_sub'.</msg>
+<status status="PASS" starttime="20230510 16:04:58.574" endtime="20230510 16:04:59.267"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:04:59.267" endtime="20230510 16:05:00.020"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<arg>14</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230510 16:05:00.024" level="INFO">Verifying element 'id=android_result_text' contains text '14'.</msg>
+<status status="PASS" starttime="20230510 16:05:00.020" endtime="20230510 16:05:00.631"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:57.543" endtime="20230510 16:05:00.631"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:57.539" endtime="20230510 16:05:00.631"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:57.534" endtime="20230510 16:05:00.631"/>
+</kw>
+<kw name="Fechar app" library="Config" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${TEST STATUS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230510 16:05:00.635" level="INFO">PASS</msg>
+<status status="PASS" starttime="20230510 16:05:00.635" endtime="20230510 16:05:00.635"/>
+</kw>
+<if>
+<branch type="IF" condition="'${TEST STATUS}' == 'PASS'">
+<kw name="Mark Test Status" library="Config">
+<arg>passed</arg>
+<arg>Resultado validado com sucesso!</arg>
+<kw name="TEST STATUS" library="mark-test-status">
+<arg>${status}</arg>
+<arg>${reason}</arg>
+<status status="PASS" starttime="20230510 16:05:00.639" endtime="20230510 16:05:01.347"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:00.635" endtime="20230510 16:05:01.347"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:00.635" endtime="20230510 16:05:01.347"/>
+</branch>
+<branch type="ELSE">
+<kw name="Mark Test Status" library="Config">
+<arg>failed</arg>
+<arg>Algo deu errado!</arg>
+<status status="NOT RUN" starttime="20230510 16:05:01.347" endtime="20230510 16:05:01.347"/>
+</kw>
+<status status="NOT RUN" starttime="20230510 16:05:01.347" endtime="20230510 16:05:01.347"/>
+</branch>
+<status status="PASS" starttime="20230510 16:05:00.635" endtime="20230510 16:05:01.347"/>
+</if>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20230510 16:05:01.347" endtime="20230510 16:05:02.054"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:00.631" endtime="20230510 16:05:02.054"/>
+</kw>
+<status status="PASS" starttime="20230510 16:04:17.089" endtime="20230510 16:05:02.054"/>
+</test>
+<test id="s1-s1-t3" name="CT-003: Subtrair 80 de 150" line="19">
+<kw name="Dado que estou no app" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou no app" library="Subtrair">
+<kw name="Abrir app" library="Config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>device=${DEVICE}</arg>
+<arg>os=${OS}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>build=${BUILD}</arg>
+<arg>name=${NAME}</arg>
+<arg>project=${PROJECT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230510 16:05:02.062" endtime="20230510 16:05:24.367"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:02.062" endtime="20230510 16:05:24.367"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:24.367" endtime="20230510 16:05:25.174"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:02.062" endtime="20230510 16:05:25.174"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:02.058" endtime="20230510 16:05:25.174"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:02.058" endtime="20230510 16:05:25.174"/>
+</kw>
+<kw name="Quando digito o valor 150" library="BDDpt-br" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o valor 150" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:25.178" endtime="20230510 16:05:25.954"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<arg>150</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:05:25.958" level="INFO">Typing text '150' into text field 'id=android_field_first_number'</msg>
+<status status="PASS" starttime="20230510 16:05:25.954" endtime="20230510 16:05:27.384"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:25.178" endtime="20230510 16:05:27.384"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:25.174" endtime="20230510 16:05:27.384"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:25.174" endtime="20230510 16:05:27.384"/>
+</kw>
+<kw name="E subtraio 80" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="subtraio 80" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:27.388" endtime="20230510 16:05:28.468"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<arg>80</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:05:28.472" level="INFO">Typing text '80' into text field 'id=android_field_second_number'</msg>
+<status status="PASS" starttime="20230510 16:05:28.468" endtime="20230510 16:05:29.958"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:27.388" endtime="20230510 16:05:29.958"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:27.384" endtime="20230510 16:05:29.958"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:27.384" endtime="20230510 16:05:29.962"/>
+</kw>
+<kw name="Então o resultado deve ser 70" library="BDDpt-br" sourcename="Então ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="o resultado deve ser 70" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:29.966" endtime="20230510 16:05:30.846"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230510 16:05:30.850" level="INFO">Clicking element 'id=android_button_sub'.</msg>
+<status status="PASS" starttime="20230510 16:05:30.846" endtime="20230510 16:05:31.861"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:31.861" endtime="20230510 16:05:32.686"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<arg>70</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230510 16:05:32.686" level="INFO">Verifying element 'id=android_result_text' contains text '70'.</msg>
+<status status="PASS" starttime="20230510 16:05:32.686" endtime="20230510 16:05:33.418"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:29.966" endtime="20230510 16:05:33.418"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:29.962" endtime="20230510 16:05:33.418"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:29.962" endtime="20230510 16:05:33.418"/>
+</kw>
+<kw name="Fechar app" library="Config" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${TEST STATUS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230510 16:05:33.418" level="INFO">PASS</msg>
+<status status="PASS" starttime="20230510 16:05:33.418" endtime="20230510 16:05:33.418"/>
+</kw>
+<if>
+<branch type="IF" condition="'${TEST STATUS}' == 'PASS'">
+<kw name="Mark Test Status" library="Config">
+<arg>passed</arg>
+<arg>Resultado validado com sucesso!</arg>
+<kw name="TEST STATUS" library="mark-test-status">
+<arg>${status}</arg>
+<arg>${reason}</arg>
+<status status="PASS" starttime="20230510 16:05:33.418" endtime="20230510 16:05:34.218"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:33.418" endtime="20230510 16:05:34.218"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:33.418" endtime="20230510 16:05:34.218"/>
+</branch>
+<branch type="ELSE">
+<kw name="Mark Test Status" library="Config">
+<arg>failed</arg>
+<arg>Algo deu errado!</arg>
+<status status="NOT RUN" starttime="20230510 16:05:34.222" endtime="20230510 16:05:34.222"/>
+</kw>
+<status status="NOT RUN" starttime="20230510 16:05:34.218" endtime="20230510 16:05:34.222"/>
+</branch>
+<status status="PASS" starttime="20230510 16:05:33.418" endtime="20230510 16:05:34.222"/>
+</if>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20230510 16:05:34.222" endtime="20230510 16:05:35.088"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:33.418" endtime="20230510 16:05:35.088"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:02.054" endtime="20230510 16:05:35.088"/>
+</test>
+<test id="s1-s1-t4" name="CT-004: Subtrair 32 de 58" line="25">
+<kw name="Dado que estou no app" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou no app" library="Subtrair">
+<kw name="Abrir app" library="Config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>device=${DEVICE}</arg>
+<arg>os=${OS}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>build=${BUILD}</arg>
+<arg>name=${NAME}</arg>
+<arg>project=${PROJECT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230510 16:05:35.096" endtime="20230510 16:05:55.756"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:35.096" endtime="20230510 16:05:55.756"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:55.756" endtime="20230510 16:05:56.529"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:35.096" endtime="20230510 16:05:56.529"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:35.092" endtime="20230510 16:05:56.529"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:35.088" endtime="20230510 16:05:56.529"/>
+</kw>
+<kw name="Quando digito o valor 58" library="BDDpt-br" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o valor 58" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:56.537" endtime="20230510 16:05:57.111"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<arg>58</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:05:57.114" level="INFO">Typing text '58' into text field 'id=android_field_first_number'</msg>
+<status status="PASS" starttime="20230510 16:05:57.111" endtime="20230510 16:05:57.802"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:56.537" endtime="20230510 16:05:57.802"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:56.533" endtime="20230510 16:05:57.802"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:56.529" endtime="20230510 16:05:57.803"/>
+</kw>
+<kw name="E subtraio 32" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="subtraio 32" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:57.810" endtime="20230510 16:05:58.653"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<arg>32</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:05:58.655" level="INFO">Typing text '32' into text field 'id=android_field_second_number'</msg>
+<status status="PASS" starttime="20230510 16:05:58.653" endtime="20230510 16:05:59.887"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:57.809" endtime="20230510 16:05:59.888"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:57.804" endtime="20230510 16:05:59.888"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:57.803" endtime="20230510 16:05:59.888"/>
+</kw>
+<kw name="Então o resultado deve ser 26" library="BDDpt-br" sourcename="Então ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="o resultado deve ser 26" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:05:59.892" endtime="20230510 16:06:00.702"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230510 16:06:00.705" level="INFO">Clicking element 'id=android_button_sub'.</msg>
+<status status="PASS" starttime="20230510 16:06:00.703" endtime="20230510 16:06:01.359"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:06:01.359" endtime="20230510 16:06:02.712"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<arg>26</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230510 16:06:02.714" level="INFO">Verifying element 'id=android_result_text' contains text '26'.</msg>
+<status status="PASS" starttime="20230510 16:06:02.712" endtime="20230510 16:06:03.447"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:59.892" endtime="20230510 16:06:03.447"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:59.889" endtime="20230510 16:06:03.448"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:59.888" endtime="20230510 16:06:03.448"/>
+</kw>
+<kw name="Fechar app" library="Config" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${TEST STATUS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230510 16:06:03.450" level="INFO">PASS</msg>
+<status status="PASS" starttime="20230510 16:06:03.449" endtime="20230510 16:06:03.450"/>
+</kw>
+<if>
+<branch type="IF" condition="'${TEST STATUS}' == 'PASS'">
+<kw name="Mark Test Status" library="Config">
+<arg>passed</arg>
+<arg>Resultado validado com sucesso!</arg>
+<kw name="TEST STATUS" library="mark-test-status">
+<arg>${status}</arg>
+<arg>${reason}</arg>
+<status status="PASS" starttime="20230510 16:06:03.451" endtime="20230510 16:06:04.233"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:03.450" endtime="20230510 16:06:04.234"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:03.450" endtime="20230510 16:06:04.234"/>
+</branch>
+<branch type="ELSE">
+<kw name="Mark Test Status" library="Config">
+<arg>failed</arg>
+<arg>Algo deu errado!</arg>
+<status status="NOT RUN" starttime="20230510 16:06:04.234" endtime="20230510 16:06:04.234"/>
+</kw>
+<status status="NOT RUN" starttime="20230510 16:06:04.234" endtime="20230510 16:06:04.234"/>
+</branch>
+<status status="PASS" starttime="20230510 16:06:03.450" endtime="20230510 16:06:04.235"/>
+</if>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20230510 16:06:04.235" endtime="20230510 16:06:04.990"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:03.448" endtime="20230510 16:06:04.990"/>
+</kw>
+<status status="PASS" starttime="20230510 16:05:35.088" endtime="20230510 16:06:04.990"/>
+</test>
+<test id="s1-s1-t5" name="CT-005: Subtrair 56 de 94" line="31">
+<kw name="Dado que estou no app" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou no app" library="Subtrair">
+<kw name="Abrir app" library="Config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>device=${DEVICE}</arg>
+<arg>os=${OS}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>build=${BUILD}</arg>
+<arg>name=${NAME}</arg>
+<arg>project=${PROJECT}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230510 16:06:04.994" endtime="20230510 16:06:25.204"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:04.994" endtime="20230510 16:06:25.205"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:06:25.205" endtime="20230510 16:06:26.040"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:04.994" endtime="20230510 16:06:26.040"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:04.992" endtime="20230510 16:06:26.040"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:04.991" endtime="20230510 16:06:26.040"/>
+</kw>
+<kw name="Quando digito o valor 94" library="BDDpt-br" sourcename="Quando ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="digito o valor 94" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:06:26.044" endtime="20230510 16:06:26.740"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_PRIMEIRO_NUMERO}</arg>
+<arg>94</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:06:26.740" level="INFO">Typing text '94' into text field 'id=android_field_first_number'</msg>
+<status status="PASS" starttime="20230510 16:06:26.740" endtime="20230510 16:06:27.555"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:26.044" endtime="20230510 16:06:27.555"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:26.044" endtime="20230510 16:06:27.555"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:26.040" endtime="20230510 16:06:27.555"/>
+</kw>
+<kw name="E subtraio 56" library="BDDpt-br" sourcename="E ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="subtraio 56" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:06:27.559" endtime="20230510 16:06:28.549"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${CAMPO_SEGUNDO_NUMERO}</arg>
+<arg>56</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230510 16:06:28.553" level="INFO">Typing text '56' into text field 'id=android_field_second_number'</msg>
+<status status="PASS" starttime="20230510 16:06:28.549" endtime="20230510 16:06:29.442"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:27.559" endtime="20230510 16:06:29.442"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:27.555" endtime="20230510 16:06:29.442"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:27.555" endtime="20230510 16:06:29.442"/>
+</kw>
+<kw name="Então o resultado deve ser 38" library="BDDpt-br" sourcename="Então ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="o resultado deve ser 38" library="Subtrair">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:06:29.442" endtime="20230510 16:06:30.321"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BOTAO_SUBTRAIR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230510 16:06:30.325" level="INFO">Clicking element 'id=android_button_sub'.</msg>
+<status status="PASS" starttime="20230510 16:06:30.321" endtime="20230510 16:06:31.202"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230510 16:06:31.202" endtime="20230510 16:06:32.318"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${RESULTADO}</arg>
+<arg>38</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230510 16:06:32.320" level="INFO">Verifying element 'id=android_result_text' contains text '38'.</msg>
+<status status="PASS" starttime="20230510 16:06:32.318" endtime="20230510 16:06:33.057"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:29.442" endtime="20230510 16:06:33.057"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:29.442" endtime="20230510 16:06:33.057"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:29.442" endtime="20230510 16:06:33.057"/>
+</kw>
+<kw name="Fechar app" library="Config" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>${TEST STATUS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230510 16:06:33.059" level="INFO">PASS</msg>
+<status status="PASS" starttime="20230510 16:06:33.058" endtime="20230510 16:06:33.059"/>
+</kw>
+<if>
+<branch type="IF" condition="'${TEST STATUS}' == 'PASS'">
+<kw name="Mark Test Status" library="Config">
+<arg>passed</arg>
+<arg>Resultado validado com sucesso!</arg>
+<kw name="TEST STATUS" library="mark-test-status">
+<arg>${status}</arg>
+<arg>${reason}</arg>
+<status status="PASS" starttime="20230510 16:06:33.060" endtime="20230510 16:06:33.442"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:33.059" endtime="20230510 16:06:33.442"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:33.059" endtime="20230510 16:06:33.442"/>
+</branch>
+<branch type="ELSE">
+<kw name="Mark Test Status" library="Config">
+<arg>failed</arg>
+<arg>Algo deu errado!</arg>
+<status status="NOT RUN" starttime="20230510 16:06:33.443" endtime="20230510 16:06:33.443"/>
+</kw>
+<status status="NOT RUN" starttime="20230510 16:06:33.442" endtime="20230510 16:06:33.443"/>
+</branch>
+<status status="PASS" starttime="20230510 16:06:33.059" endtime="20230510 16:06:33.443"/>
+</if>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20230510 16:06:33.443" endtime="20230510 16:06:34.156"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:33.058" endtime="20230510 16:06:34.156"/>
+</kw>
+<status status="PASS" starttime="20230510 16:06:04.991" endtime="20230510 16:06:34.156"/>
+</test>
+<status status="PASS" starttime="20230510 16:03:44.060" endtime="20230510 16:06:34.157"/>
+</suite>
+<status status="PASS" starttime="20230510 16:03:44.036" endtime="20230510 16:06:34.158"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Subtrair">Suites.Subtrair</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

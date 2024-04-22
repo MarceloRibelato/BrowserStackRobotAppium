@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.0 on win32)" generated="20230807 17:00:14.506" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Dividir" source="C:\PyCharm Workspace\BrowserStack-Calculator-Android\features\Dividir.robot">
+<test id="s1-s1-t1" name="CT-002: Dividir 30 por 2" line="13">
+<kw name="Dado que estou no app" library="BDDpt-br" sourcename="Dado ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="que estou no app" library="Dividir">
+<kw name="Abrir app" library="Config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>app=${APP}</arg>
+<arg>device=${DEVICE}</arg>
+<arg>os=${OS}</arg>
+<arg>os_version=${OS_VERSION}</arg>
+<arg>project=${PROJECT}</arg>
+<arg>build=${SUITE NAME}</arg>
+<arg>name=${TEST NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230807 17:00:20.480" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230807 17:00:20.480" endtime="20230807 17:00:20.488"/>
+</kw>
+<msg timestamp="20230807 17:00:20.492" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230807 17:00:20.492" level="INFO">Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\features\Dividir.robot:13
+    T:  CT-002: Dividir 30 por 2    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\features\Dividir.robot:14
+      Dado que estou no app    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\resources\BDDpt-br.resource:3
+      Run Keyword    ${keyword}
+      |  ${keyword} = &lt;Unable to define variable value&gt;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  None:0
+      que estou no app    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\steps\Dividir.resource:8
+      Abrir app    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\PyCharm Workspace\BrowserStack-Calculator-Android\resources\Config.resource:17
+      Open Application    remote_url=${REMOTE_URL}    app=${APP}    device=${DEVICE}    os=${OS}    os_version=${OS_VERSION}    project=${PROJECT}    build=${SUITE NAME}    name=${TEST NAME}
+      |  remote_url=${REMOTE_URL} = remote_url=https://thiagoassiscoelh_BMRhkI:6Qyt5J9USGx7cHr4pgs4@hub-cloud.browserstack.com/wd/hub (str)
+      |  app=${APP} = app=bs://7440321efc2c4362f3895435a36625d979d45ccb (str)
+      |  device=${DEVICE} = device=Samsung Galaxy S22 (str)
+      |  os=${OS} = os=android (str)
+      |  os_version=${OS_VERSION} = os_version=12.0 (str)
+      |  project=${PROJECT} = project=Demonstração (str)
+      |  build=${SUITE NAME} = build=Suites.Dividir (str)
+      |  name=${TEST NAME} = name=CT-002: Dividir 30 por 2 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  None:0
+      Capture Page Screenshot    
+______________________________________________________________________________</msg>
+<msg timestamp="20230807 17:00:20.492" level="FAIL">WebDriverException: Message: App Automate testing time has expired. Contact BrowserStack Support at https://www.browserstack.com/contact for extending your Free Trial.
+</msg>
+<status status="FAIL" starttime="20230807 17:00:18.788" endtime="20230807 17:00:20.492"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:18.784" endtime="20230807 17:00:20.492"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BOTAO_DIVIDIR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20230807 17:00:20.492" endtime="20230807 17:00:20.492"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:18.784" endtime="20230807 17:00:20.492"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:18.776" endtime="20230807 17:00:20.492"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:18.776" endtime="20230807 17:00:20.492"/>
+</kw>
+<kw name="Quando digito o valor 30" library="BDDpt-br" sourcename="Quando ${keyword}">
+<status status="NOT RUN" starttime="20230807 17:00:20.492" endtime="20230807 17:00:20.492"/>
+</kw>
+<kw name="E divido por 2" library="BDDpt-br" sourcename="E ${keyword}">
+<status status="NOT RUN" starttime="20230807 17:00:20.492" endtime="20230807 17:00:20.492"/>
+</kw>
+<kw name="Então o resultado deve ser 15" library="BDDpt-br" sourcename="Então ${keyword}">
+<status status="NOT RUN" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.496"/>
+</kw>
+<kw name="Fechar app" library="Config" type="TEARDOWN">
+<if>
+<branch type="IF" condition="'${TEST STATUS}' == 'PASS'">
+<kw name="Mark Test Status" library="Config">
+<arg>passed</arg>
+<arg>Resultado validado com sucesso!</arg>
+<status status="NOT RUN" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.496"/>
+</kw>
+<status status="NOT RUN" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.496"/>
+</branch>
+<branch type="ELSE">
+<kw name="Mark Test Status" library="Config">
+<arg>failed</arg>
+<arg>Algo deu errado!</arg>
+<kw name="TEST STATUS" library="mark-test-status">
+<arg>${status}</arg>
+<arg>${reason}</arg>
+<msg timestamp="20230807 17:00:20.496" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.500"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.500"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.500"/>
+</branch>
+<status status="FAIL" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.500"/>
+</if>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20230807 17:00:20.500" endtime="20230807 17:00:20.500"/>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:20.496" endtime="20230807 17:00:20.500">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20230807 17:00:18.764" endtime="20230807 17:00:20.504">WebDriverException: Message: App Automate testing time has expired. Contact BrowserStack Support at https://www.browserstack.com/contact for extending your Free Trial.
+
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" starttime="20230807 17:00:14.629" endtime="20230807 17:00:20.504"/>
+</suite>
+<status status="FAIL" starttime="20230807 17:00:14.568" endtime="20230807 17:00:20.504"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Dividir">Suites.Dividir</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230807 17:00:20.492" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
