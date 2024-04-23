@@ -18,16 +18,17 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          robot features/Somar.robot
+          pip install --force-reinstall "Appium-Python-Client<4.0.0"
+           
+
+      - name: Executar teste no BrowserStack
+        run: |  
+          robot features/Somar.robot 
+          
+          
+
 #      - name: Upload do APK
 #        run: |
 #          curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
 #          -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-app" \
 #          -F file=@app/Calculadora.apk
-
-#      - name: Executar teste no BrowserStack
-#        run: |
-#          curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
-#          -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
-#          -d '{"testSuite": "bs://7e756739686269e67a25e02bf170a2d9360344a0", "devices": ["Samsung Galaxy S24 Ultra-14.0"]}' \
-#          -H "Content-Type: application/json"
