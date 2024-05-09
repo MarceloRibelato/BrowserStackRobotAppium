@@ -1,8 +1,8 @@
 *** Settings ***
 Resource    ../steps/Somar.resource
 Resource    ../resources/BDDpt-br.resource
-Test Setup    Abrir App
-Test Teardown    Close Application
+
+Test Teardown    Fechar app
 
 *** Variables ***
 ${DEVICE}        Motorola Moto G71 5G

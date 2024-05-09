@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.9 on win32)" generated="2024-04-24T09:46:09.690218" rpa="false" schemaversion="5">
+<robot generator="Rebot 7.0 (Python 3.10.9 on win32)" generated="2024-04-24T09:46:15.180965" rpa="false" schemaversion="5">
 <suite id="s1" name="Somar" source="C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot">
 <test id="s1-t1" name="CT-001: Somar 15 com 25" line="13">
 <kw name="Dado que estou no app" owner="BDDpt-br" source_name="Dado ${keyword}">
@@ -9,7 +9,7 @@
 <kw name="Capture Page Screenshot" owner="AppiumLibrary">
 <msg time="2024-04-24T09:46:09.786989" level="FAIL">No application is open</msg>
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.786989" elapsed="0.026073">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.786989" elapsed="0.025899">No application is open</status>
 </kw>
 <msg time="2024-04-24T09:46:09.814981" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 <msg time="2024-04-24T09:46:09.815881" level="INFO">Traceback (most recent call last):
@@ -37,13 +37,13 @@ ______________________________________________________________________________</
 <msg time="2024-04-24T09:46:09.815881" level="FAIL">No application is open</msg>
 <arg>${BOTAO_SOMAR}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.786989" elapsed="0.028892">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.785994" elapsed="0.029887">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.785994" elapsed="0.030914">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.785994" elapsed="0.029887">No application is open</status>
 </kw>
 <arg>${keyword}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.785994" elapsed="0.030914">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.784994" elapsed="0.031914">No application is open</status>
 </kw>
 <status status="FAIL" start="2024-04-24T09:46:09.784994" elapsed="0.031914">No application is open</status>
 </kw>
@@ -69,10 +69,10 @@ ______________________________________________________________________________</
 <branch type="ELSE">
 <kw name="Mark Test Status" owner="Config">
 <kw name="TEST STATUS" owner="mark-test-status">
-<msg time="2024-04-24T09:46:09.821895" level="FAIL">No application is open</msg>
+<msg time="2024-04-24T09:46:09.820897" level="FAIL">No application is open</msg>
 <arg>${status}</arg>
 <arg>${reason}</arg>
-<status status="FAIL" start="2024-04-24T09:46:09.820897" elapsed="0.004955">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.820897" elapsed="0.005058">No application is open</status>
 </kw>
 <arg>failed</arg>
 <arg>Algo deu errado!</arg>
@@ -129,7 +129,7 @@ ______________________________________________________________________________</
 <msg time="2024-04-24T09:46:09.835860" level="FAIL">No application is open</msg>
 <arg>${BOTAO_SOMAR}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.831868" elapsed="0.004955">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.830870" elapsed="0.005780">No application is open</status>
 </kw>
 <status status="FAIL" start="2024-04-24T09:46:09.830870" elapsed="0.005953">No application is open</status>
 </kw>
@@ -232,7 +232,7 @@ ______________________________________________________________________________</
 <status status="FAIL" start="2024-04-24T09:46:09.843838" elapsed="0.005984">No application is open</status>
 </kw>
 <kw name="Quando digito o valor 80" owner="BDDpt-br" source_name="Quando ${keyword}">
-<status status="NOT RUN" start="2024-04-24T09:46:09.849822" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.849822" elapsed="0.000361"/>
 </kw>
 <kw name="E somo com 150" owner="BDDpt-br" source_name="E ${keyword}">
 <status status="NOT RUN" start="2024-04-24T09:46:09.850183" elapsed="0.000000"/>
@@ -288,7 +288,7 @@ No application is open</status>
 <status status="FAIL" start="2024-04-24T09:46:09.856800" elapsed="0.001004">No application is open</status>
 </kw>
 <msg time="2024-04-24T09:46:09.859796" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-04-24T09:46:09.860713" level="INFO">Traceback (most recent call last):
+<msg time="2024-04-24T09:46:09.860646" level="INFO">Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:31
     T:  CT-004: Somar 27 com 44    
@@ -313,7 +313,7 @@ ______________________________________________________________________________</
 <msg time="2024-04-24T09:46:09.860713" level="FAIL">No application is open</msg>
 <arg>${BOTAO_SOMAR}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.856800" elapsed="0.004847">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.856800" elapsed="0.003913">No application is open</status>
 </kw>
 <status status="FAIL" start="2024-04-24T09:46:09.856800" elapsed="0.004847">No application is open</status>
 </kw>
@@ -327,7 +327,7 @@ ______________________________________________________________________________</
 <status status="NOT RUN" start="2024-04-24T09:46:09.861647" elapsed="0.000000"/>
 </kw>
 <kw name="E somo com 44" owner="BDDpt-br" source_name="E ${keyword}">
-<status status="NOT RUN" start="2024-04-24T09:46:09.861647" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.862642" elapsed="0.000000"/>
 </kw>
 <kw name="Então o resultado deve ser 71" owner="BDDpt-br" source_name="Então ${keyword}">
 <status status="NOT RUN" start="2024-04-24T09:46:09.862642" elapsed="0.000000"/>
@@ -338,33 +338,33 @@ ______________________________________________________________________________</
 <kw name="Mark Test Status" owner="Config">
 <arg>passed</arg>
 <arg>Resultado validado com sucesso!</arg>
-<status status="NOT RUN" start="2024-04-24T09:46:09.863640" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.863640" elapsed="0.000998"/>
 </kw>
-<status status="NOT RUN" start="2024-04-24T09:46:09.862642" elapsed="0.000998"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.863640" elapsed="0.000998"/>
 </branch>
 <branch type="ELSE">
 <kw name="Mark Test Status" owner="Config">
 <kw name="TEST STATUS" owner="mark-test-status">
-<msg time="2024-04-24T09:46:09.864638" level="FAIL">No application is open</msg>
+<msg time="2024-04-24T09:46:09.865634" level="FAIL">No application is open</msg>
 <arg>${status}</arg>
 <arg>${reason}</arg>
-<status status="FAIL" start="2024-04-24T09:46:09.864638" elapsed="0.000000">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.865634" elapsed="0.000997">No application is open</status>
 </kw>
 <arg>failed</arg>
 <arg>Algo deu errado!</arg>
-<status status="FAIL" start="2024-04-24T09:46:09.863640" elapsed="0.001994">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.864638" elapsed="0.001993">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.863640" elapsed="0.001994">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.864638" elapsed="0.001993">No application is open</status>
 </branch>
-<status status="FAIL" start="2024-04-24T09:46:09.862642" elapsed="0.002992">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.863640" elapsed="0.002991">No application is open</status>
 </if>
 <kw name="Close All Applications" owner="AppiumLibrary">
 <doc>Closes all open applications.</doc>
-<status status="PASS" start="2024-04-24T09:46:09.865634" elapsed="0.000997"/>
+<status status="PASS" start="2024-04-24T09:46:09.867629" elapsed="0.001995"/>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.862642" elapsed="0.004987">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.862642" elapsed="0.006982">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.855803" elapsed="0.011826">No application is open
+<status status="FAIL" start="2024-04-24T09:46:09.855803" elapsed="0.014824">No application is open
 
 Also teardown failed:
 No application is open</status>
@@ -375,12 +375,12 @@ No application is open</status>
 <kw name="que estou no app" owner="Somar">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <kw name="Capture Page Screenshot" owner="AppiumLibrary">
-<msg time="2024-04-24T09:46:09.870627" level="FAIL">No application is open</msg>
+<msg time="2024-04-24T09:46:09.873615" level="FAIL">No application is open</msg>
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.870627" elapsed="0.000993">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.873615" elapsed="0.001029">No application is open</status>
 </kw>
-<msg time="2024-04-24T09:46:09.873615" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg time="2024-04-24T09:46:09.873615" level="INFO">Traceback (most recent call last):
+<msg time="2024-04-24T09:46:09.876715" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-04-24T09:46:09.877637" level="INFO">Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:37
     T:  CT-005: Somar 37 com 182    
@@ -402,27 +402,27 @@ No application is open</status>
     File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\steps\Somar.resource:8
       Capture Page Screenshot    
 ______________________________________________________________________________</msg>
-<msg time="2024-04-24T09:46:09.873615" level="FAIL">No application is open</msg>
+<msg time="2024-04-24T09:46:09.877637" level="FAIL">No application is open</msg>
 <arg>${BOTAO_SOMAR}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.869624" elapsed="0.005020">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.872618" elapsed="0.005019">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.869624" elapsed="0.005020">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.872618" elapsed="0.005019">No application is open</status>
 </kw>
 <arg>${keyword}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="FAIL" start="2024-04-24T09:46:09.868626" elapsed="0.006018">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.871620" elapsed="0.006017">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.868626" elapsed="0.006018">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.871620" elapsed="0.007011">No application is open</status>
 </kw>
 <kw name="Quando digito o valor 37" owner="BDDpt-br" source_name="Quando ${keyword}">
-<status status="NOT RUN" start="2024-04-24T09:46:09.874644" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.878631" elapsed="0.000000"/>
 </kw>
 <kw name="E somo com 182" owner="BDDpt-br" source_name="E ${keyword}">
-<status status="NOT RUN" start="2024-04-24T09:46:09.875640" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.878631" elapsed="0.000000"/>
 </kw>
 <kw name="Então o resultado deve ser 219" owner="BDDpt-br" source_name="Então ${keyword}">
-<status status="NOT RUN" start="2024-04-24T09:46:09.875640" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.878631" elapsed="0.000999"/>
 </kw>
 <kw name="Fechar app" owner="Config" type="TEARDOWN">
 <if>
@@ -430,38 +430,39 @@ ______________________________________________________________________________</
 <kw name="Mark Test Status" owner="Config">
 <arg>passed</arg>
 <arg>Resultado validado com sucesso!</arg>
-<status status="NOT RUN" start="2024-04-24T09:46:09.877637" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.880628" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-04-24T09:46:09.876715" elapsed="0.000922"/>
+<status status="NOT RUN" start="2024-04-24T09:46:09.879630" elapsed="0.000998"/>
 </branch>
 <branch type="ELSE">
 <kw name="Mark Test Status" owner="Config">
 <kw name="TEST STATUS" owner="mark-test-status">
-<msg time="2024-04-24T09:46:09.878631" level="FAIL">No application is open</msg>
+<msg time="2024-04-24T09:46:09.881623" level="FAIL">No application is open</msg>
 <arg>${status}</arg>
 <arg>${reason}</arg>
-<status status="FAIL" start="2024-04-24T09:46:09.878631" elapsed="0.000000">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.881623" elapsed="0.000000">No application is open</status>
 </kw>
 <arg>failed</arg>
 <arg>Algo deu errado!</arg>
-<status status="FAIL" start="2024-04-24T09:46:09.877637" elapsed="0.001993">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.880628" elapsed="0.000995">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.877637" elapsed="0.001993">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.880628" elapsed="0.000995">No application is open</status>
 </branch>
-<status status="FAIL" start="2024-04-24T09:46:09.876715" elapsed="0.002915">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.879630" elapsed="0.002993">No application is open</status>
 </if>
 <kw name="Close All Applications" owner="AppiumLibrary">
 <doc>Closes all open applications.</doc>
-<status status="PASS" start="2024-04-24T09:46:09.879630" elapsed="0.000998"/>
+<status status="PASS" start="2024-04-24T09:46:09.882623" elapsed="0.000963"/>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.875640" elapsed="0.005983">No application is open</status>
+<status status="FAIL" start="2024-04-24T09:46:09.879630" elapsed="0.003956">No application is open</status>
 </kw>
-<status status="FAIL" start="2024-04-24T09:46:09.867629" elapsed="0.013994">No application is open
+<status status="FAIL" start="2024-04-24T09:46:09.870627" elapsed="0.012959">No application is open
 
 Also teardown failed:
 No application is open</status>
 </test>
-<status status="FAIL" start="2024-04-24T09:46:09.700190" elapsed="0.181433"/>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="FAIL" start="2024-04-24T09:46:09.700000" elapsed="0.184425"/>
 </suite>
 <statistics>
 <total>
@@ -474,6 +475,11 @@ No application is open</status>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-04-24T09:46:09.814981" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-04-24T09:46:09.835860" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-04-24T09:46:09.847824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-04-24T09:46:09.859796" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-04-24T09:46:09.876715" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 <msg time="2024-04-24T09:46:09.814981" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 <msg time="2024-04-24T09:46:09.835860" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 <msg time="2024-04-24T09:46:09.847824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
