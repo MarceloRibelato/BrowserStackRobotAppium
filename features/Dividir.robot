@@ -1,6 +1,7 @@
 *** Settings ***
 Resource    ../steps/Dividir.resource
 Resource    ../resources/BDDpt-br.resource
+Test Setup    Abrir App
 Test Teardown    Fechar app
 
 *** Test Cases ***

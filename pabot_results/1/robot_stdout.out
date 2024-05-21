@@ -1,26 +1,26 @@
 
-09:46:06 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+16:53:13 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
 
-09:46:09 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+16:53:17 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
 ==============================================================================
 Somar                                                                         
 ==============================================================================
 CT-001: Somar 15 com 25                                                 
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:13
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:13
     T:  CT-001: Somar 15 com 25    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:5
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:5
       Fechar app    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:27
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:26
           
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:28
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:27
       Mark Test Status    failed    Algo deu errado!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:34
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:33
       TEST STATUS    ${status}    ${reason}
       |  ${status} = failed (str)
       |  ${reason} = Algo deu errado! (str)
@@ -34,19 +34,19 @@ No application is open
 CT-002: Somar 35 com 65                                                 
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:19
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:19
     T:  CT-002: Somar 35 com 65    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:5
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:5
       Fechar app    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:27
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:26
           
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:28
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:27
       Mark Test Status    failed    Algo deu errado!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:34
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:33
       TEST STATUS    ${status}    ${reason}
       |  ${status} = failed (str)
       |  ${reason} = Algo deu errado! (str)
@@ -60,19 +60,19 @@ No application is open
 CT-003: Somar 80 com 150                                                
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:25
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:25
     T:  CT-003: Somar 80 com 150    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:5
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:5
       Fechar app    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:27
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:26
           
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:28
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:27
       Mark Test Status    failed    Algo deu errado!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:34
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:33
       TEST STATUS    ${status}    ${reason}
       |  ${status} = failed (str)
       |  ${reason} = Algo deu errado! (str)
@@ -86,19 +86,19 @@ No application is open
 CT-004: Somar 27 com 44                                                 
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:31
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:31
     T:  CT-004: Somar 27 com 44    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:5
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:5
       Fechar app    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:27
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:26
           
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:28
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:27
       Mark Test Status    failed    Algo deu errado!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:34
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:33
       TEST STATUS    ${status}    ${reason}
       |  ${status} = failed (str)
       |  ${reason} = Algo deu errado! (str)
@@ -112,19 +112,19 @@ No application is open
 CT-005: Somar 37 com 182                                                
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:37
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:37
     T:  CT-005: Somar 37 com 182    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\features\Somar.robot:5
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\features\Somar.robot:5
       Fechar app    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:27
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:26
           
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:28
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:27
       Mark Test Status    failed    Algo deu errado!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\resources\Config.resource:34
+    File  C:\YAMAN_DEV\BrowserStackRobotAppium\resources\Config.resource:33
       TEST STATUS    ${status}    ${reason}
       |  ${status} = failed (str)
       |  ${reason} = Algo deu errado! (str)
@@ -138,8 +138,8 @@ No application is open
 Somar                                                                 | FAIL |
 5 tests, 0 passed, 5 failed
 ==============================================================================
-Output:  C:\YAMAN_DEV\Robot\BrowserStackRobotAppium\pabot_results\1\output.xml
+Output:  C:\YAMAN_DEV\BrowserStackRobotAppium\pabot_results\1\output.xml
 
-09:46:13 [browserstack_sdk.__init__][INFO] - Handling session close
+16:53:21 [browserstack_sdk.__init__][INFO] - Handling session close
 
-09:46:13 [browserstack_sdk.__init__][INFO] - All done!
+16:53:21 [browserstack_sdk.__init__][INFO] - All done!
