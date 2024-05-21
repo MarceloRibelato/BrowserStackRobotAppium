@@ -3,13 +3,13 @@ Library    AppiumLibrary
 Library    ../resources/mark-test-status.py
 
 *** Variables ***
-${APP}           bs://7e756739686269e67a25e02bf170a2d9360344a0
+${APP}           bs://04522afba4ba26648b35f46b86dcfdbcc4498a10
 ${DEVICE}        Samsung Galaxy S22
 ${OS}            android
 ${OS_VERSION}    12.0
 ${PROJECT}       Demonstração
-${USERNAME}=     marceloribelato_ksi0ah
-${ACCESSKEY}=    Eej2sRzekpDZaBDLJGKr
+${USERNAME}=     rodrigodias_tdJcv2
+${ACCESSKEY}=    wAkqxdydayzjMsxJLGAC
 ${REMOTE_URL}=   https://${USERNAME}:${ACCESSKEY}@hub-cloud.browserstack.com/wd/hub
 
 
