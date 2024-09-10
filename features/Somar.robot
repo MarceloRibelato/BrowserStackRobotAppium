@@ -20,7 +20,7 @@ CT-002: Somar 35 com 65
     Dado que estou no app
     Quando digito o valor 35
     E somo com 65
-    Então o resultado deve ser 100
+    Então o resultado deve ser 105
 
 CT-003: Somar 80 com 150
     Dado que estou no app
