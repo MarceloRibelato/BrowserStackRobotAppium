@@ -3,7 +3,7 @@ Library    AppiumLibrary
 Library    ../resources/mark-test-status.py
 
 *** Variables ***
-${APP}           bs://ae49aa7eb964198e2f543b5c6ce35630dc63c67c
+${APP}           bs://309849d165b0eedc083da3c055994a9677cc6c57
 ${DEVICE}        Samsung Galaxy S22
 ${OS}            android
 ${OS_VERSION}    12.0
