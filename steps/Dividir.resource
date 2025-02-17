@@ -22,7 +22,7 @@ digito o valor 150
     input text    ${CAMPO_PRIMEIRO_NUMERO}      150
 
 digito o valor 350
-    wait until element is visible    ${CAMPO_PRIMEIRO_NUMERO}    10
+    wait until element is visible    ${CAMPO_PRIMEIRO_NUMERO}
     input text    ${CAMPO_PRIMEIRO_NUMERO}      350
 
 digito o valor 512

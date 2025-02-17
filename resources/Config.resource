@@ -8,7 +8,7 @@ ${DEVICE}        Samsung Galaxy S22
 ${OS}            android
 ${OS_VERSION}    12.0
 ${PROJECT}       Demonstração
-${PLATFORM_NAME}  Android
+${platformName}  Android  
 ${USERNAME}=     jeanbezerra_xZDWzk
 ${ACCESSKEY}=    GgUczbw5CFg7gqLT8eMG
 ${REMOTE_URL}=   https://${USERNAME}:${ACCESSKEY}@hub-cloud.browserstack.com/wd/hub
@@ -16,7 +16,7 @@ ${TIMEOUT}    30
 *** Keywords ***
 Abrir app
   open application    ${REMOTE_URL}
-  ...    app=${APP}
+  ...    app=${APP}  
   ...    name=${TEST NAME}
   ...    buildName=${PLATFORM_NAME} - ${SUITE NAME} -
   ...    projectName=Banco Master - Digital

@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../steps/Multiplicar.resource
 Resource    ../resources/BDDpt-br.resource
-Test Setup    Abrir App
 Test Teardown    Fechar app
 
 

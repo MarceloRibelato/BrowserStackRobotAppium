@@ -5,6 +5,7 @@ Resource    ../pages/Calculadora.resource
 *** Keywords ***
 ###DADO
 que estou no app
+    Abrir app
     wait until element is visible    ${BOTAO_SOMAR}
 
 ###QUANDO
