@@ -1,12 +1,9 @@
-userName: marceloribelato_ksi0ah
-accessKey: Eej2sRzekpDZaBDLJGKr
+userName: rodrigodias_tdJcv2
+accessKey: wAkqxdydayzjMsxJLGAC
 framework: robot
 platforms:
   - deviceName: Samsung Galaxy S23 Ultra
     osVersion: 13.0
-    deviceOrientation: portrait
-  - deviceName: Motorola Moto G71 5G
-    osVersion: 11.0
     deviceOrientation: portrait
 parallelsPerPlatform: 1
 browserstackLocal: true

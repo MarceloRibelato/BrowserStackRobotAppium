@@ -8,7 +8,7 @@ ${DEVICE}        Samsung Galaxy S22
 ${OS}            android
 ${OS_VERSION}    12.0
 ${PROJECT}       Demonstração
-${platformName}  Android
+${PLATFORM_NAME}  Android
 ${USERNAME}=     jeanbezerra_xZDWzk
 ${ACCESSKEY}=    GgUczbw5CFg7gqLT8eMG
 ${REMOTE_URL}=   https://${USERNAME}:${ACCESSKEY}@hub-cloud.browserstack.com/wd/hub
