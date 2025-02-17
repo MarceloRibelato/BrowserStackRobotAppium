@@ -9,6 +9,7 @@ CT-001: Dividir 100 por 5
     Quando digito o valor 100
     E divido por 5
     Então o resultado deve ser 20
+    clo
 
 CT-002: Dividir 30 por 2
     Dado que estou no app
