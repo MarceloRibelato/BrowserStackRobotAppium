@@ -1,4 +1,5 @@
 name: Execute Mobile Test on BrowserStack
+
 on:
   push:
     branches: [ "main" ]
@@ -8,27 +9,30 @@ on:
 jobs:
   run_tests:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
       - name: Set up Python 3.12
         uses: actions/setup-python@v3
         with:
           python-version: "3.12"
 
-#      - name: Upload do APK
-#        run: |
-#          curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
-#          -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-app" \
-#          -F file=@app/Calculadora.apk
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-           
+
+      # - name: Upload do APK para BrowserStack
+      #   run: |
+      #     curl -u "${{ secrets.BROWSERSTACK_USERNAME }}:${{ secrets.BROWSERSTACK_ACCESS_KEY }}" \
+      #     -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-app" \
+      #     -F file=@app/Calculadora.apk
+      #   env:
+      #     BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+      #     BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
 
       - name: Executar teste no BrowserStack
         run: |  
-          robot features/Somar.robot 
-          
-
+          robot features/Somar.robot
