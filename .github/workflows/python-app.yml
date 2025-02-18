@@ -16,22 +16,22 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Update certifi
-        run: |
-          pip install --upgrade certifi
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install certifi
           pip install -r requirements.txt
 
-      # Descomente e verifique se o APK está sendo enviado corretamente
-      # - name: Upload do APK
-      #   run: |
-      #     curl -u "marceloribelato_ksi0ah:Eej2sRzekpDZaBDLJGKr" \
-      #     -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/module-app" \
-      #     -F file=@app/Calculadora.apk
+      - name: Define SSL_CERT_FILE
+        run: echo "SSL_CERT_FILE=$(python -c 'import certifi; print(certifi.where())')" >> $GITHUB_ENV
+
+      - name: Verificar Certificado
+        run: |
+          echo "Certificado em uso:"
+          python -c 'import certifi; print(certifi.where())'
 
       - name: Executar teste no BrowserStack
-        run: |  
+        env:
+          SSL_CERT_FILE: ${{ env.SSL_CERT_FILE }}
+        run: |
           robot features/Somar.robot
