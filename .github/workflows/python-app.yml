@@ -16,22 +16,30 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Update system certificates
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ca-certificates
+          sudo update-ca-certificates
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install certifi
           pip install -r requirements.txt
 
-      - name: Define SSL_CERT_FILE
+      - name: Set SSL_CERT_FILE
         run: echo "SSL_CERT_FILE=$(python -c 'import certifi; print(certifi.where())')" >> $GITHUB_ENV
-
+      
       - name: Verificar Certificado
         run: |
           echo "Certificado em uso:"
           python -c 'import certifi; print(certifi.where())'
+          cat $(python -c 'import certifi; print(certifi.where())')
 
       - name: Executar teste no BrowserStack
         env:
           SSL_CERT_FILE: ${{ env.SSL_CERT_FILE }}
         run: |
+          export SSL_CERT_FILE=$SSL_CERT_FILE
           robot features/Somar.robot
